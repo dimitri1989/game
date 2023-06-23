@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>number</title>
+</head>
+<body><div class="container">
+    <div class="header">
+        <button type="button" class="header__reset-button">ხელახლა თამაში</button>
+        <div class="header__number">(1-დან 20-მდე რიცხვები)</div>
+    </div>
+<div class="main">
+    <main class="main__win-number">
+        <h2 id="win-number">?</h2>
+    </main>
+</div>
+<div class="footer">
+    <form onsubmit="return check()" id="reset">
+        <p id="result"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+        <p id="lost"></p>
+        <input type="number" id="input" aria-valuemax="10">
+        <input type="submit" value="check">
+    </form>
+    <div class="footer__record">
+        <div class="footer__record-count"><p class="footer__record-text"> დარჩენილი ცდა: 20</p></div>
+        <div class="footer__record-sum"><img src="img/winner.png" alt="">რეკორდი: </div>
+    </div>
+</div>
+</div>
+ 
+    <script src="app.js"></script>
+</body>
+</html>
